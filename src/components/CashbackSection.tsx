@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -196,7 +197,7 @@ const CashbackSection = () => {
               Revista digital + Biblioteca de e-books + Assistentes IA + Cashback
             </p>
             <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+              <Button size="lg" className="w-full sm:w-auto bg-white text-indigo-600 hover:bg-gray-100 font-bold py-4 px-6 sm:py-3 sm:px-8 rounded-full text-base sm:text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
                 💎 Quero Acesso Completo Agora
               </Button>
             </a>
