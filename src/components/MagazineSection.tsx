@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Download, Star } from 'lucide-react';
-
 const MagazineSection = () => {
-  return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+  return <section className="py-16 sm:py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6 px-2">
@@ -25,11 +22,7 @@ const MagazineSection = () => {
             <CardContent className="p-6 sm:p-8">
               <div className="flex justify-center mb-6">
                 <div className="relative">
-                  <img 
-                    src="/lovable-uploads/a62c1d8c-0e52-4c8e-82a0-e56b31b8faf8.png" 
-                    alt="Revista SOMOS - Edições digitais"
-                    className="w-full max-w-sm rounded-lg shadow-xl group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/lovable-uploads/a62c1d8c-0e52-4c8e-82a0-e56b31b8faf8.png" alt="Revista SOMOS - Edições digitais" className="w-full max-w-sm rounded-lg shadow-xl group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute -top-2 -right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     NOVO
                   </div>
@@ -49,9 +42,7 @@ const MagazineSection = () => {
                 </p>
                 
                 <div className="flex items-center justify-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />)}
                   <span className="ml-2 text-sm text-gray-600">Avaliação dos membros</span>
                 </div>
                 
@@ -78,11 +69,7 @@ const MagazineSection = () => {
             <CardContent className="p-6 sm:p-8">
               <div className="flex justify-center mb-6">
                 <div className="relative">
-                  <img 
-                    src="/lovable-uploads/8c07c645-86a2-46e5-841e-07d589cdcf2f.png" 
-                    alt="Biblioteca de E-books exclusivos"
-                    className="w-full max-w-sm rounded-lg shadow-xl group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/lovable-uploads/8c07c645-86a2-46e5-841e-07d589cdcf2f.png" alt="Biblioteca de E-books exclusivos" className="w-full max-w-sm rounded-lg shadow-xl group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute -top-2 -right-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     EXCLUSIVO
                   </div>
@@ -102,9 +89,7 @@ const MagazineSection = () => {
                 </p>
                 
                 <div className="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-4 mb-6">
-                  <p className="text-purple-800 font-semibold text-sm">
-                    🎯 Mais de 50 e-books disponíveis para download
-                  </p>
+                  <p className="text-purple-800 font-semibold text-sm">🎯 Diversos e-books disponíveis para download</p>
                 </div>
                 
                 <ul className="text-left text-gray-600 mb-6 space-y-2">
@@ -134,17 +119,12 @@ const MagazineSection = () => {
             <p className="text-lg sm:text-xl mb-6 text-indigo-100">
               Revista digital + Biblioteca de e-books + Assistentes IA + Cashback
             </p>
-            <Button 
-              size="lg" 
-              className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
+            <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
               💎 Quero Acesso Completo Agora
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MagazineSection;
