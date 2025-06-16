@@ -31,9 +31,18 @@ const Hero = () => {
         <div className="absolute bottom-40 left-20 w-16 h-16 bg-gradient-to-r from-purple-400/30 to-pink-500/30 rounded-full blur-lg animate-bounce delay-300"></div>
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex items-center">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex flex-col items-center">
+        {/* Logo */}
+        <div className="mb-8 sm:mb-12">
+          <img 
+            src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" 
+            alt="Logo" 
+            className="h-16 sm:h-20 lg:h-24 w-auto"
+          />
+        </div>
+        
+        <div className="max-w-6xl mx-auto flex-1 flex items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             
             {/* Left Content */}
             <div className="text-left">
