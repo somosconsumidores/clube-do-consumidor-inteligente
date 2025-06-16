@@ -33,11 +33,11 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex flex-col items-center">
         {/* Logo */}
-        <div className="mb-8 sm:mb-12">
+        <div className="mb-6 sm:mb-8">
           <img 
             src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" 
             alt="Logo" 
-            className="h-16 sm:h-20 lg:h-24 w-auto"
+            className="h-8 sm:h-10 lg:h-12 w-auto"
           />
         </div>
         
