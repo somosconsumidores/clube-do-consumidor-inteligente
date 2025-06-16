@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Rocket, Unlock, Target } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+  return <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
         <div className="text-center mb-12 sm:mb-16">
           <div className="flex justify-center items-center gap-3 mb-6 sm:mb-8">
@@ -42,22 +39,17 @@ const Footer = () => {
             <p className="text-lg sm:text-xl mb-6 sm:mb-8">
               Junte-se aos milhares de consumidores inteligentes que já transformaram suas vidas financeiras
             </p>
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-lg sm:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-200 animate-pulse"
-            >
+            <Button size="lg" className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-lg sm:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-200 animate-pulse">
               👉 CLIQUE AQUI E SEJA UM MEMBRO AGORA
             </Button>
           </div>
         </div>
         
         <div className="border-t border-white/20 pt-6 sm:pt-8 text-center text-blue-200">
-          <p className="text-sm sm:text-base">&copy; 2024 Clube do Consumo Inteligente. Todos os direitos reservados.</p>
+          <p className="text-sm sm:text-base">© 2025 Clube do Consumo Inteligente. Todos os direitos reservados.</p>
           <p className="mt-2 text-xs sm:text-sm">🔐 Dados protegidos | 🚫 Spam free | ✅ Cancelamento fácil</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
