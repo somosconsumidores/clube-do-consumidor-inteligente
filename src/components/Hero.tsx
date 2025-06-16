@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Gift, Zap, Package, Star, Shield, TrendingUp } from 'lucide-react';
@@ -23,9 +24,9 @@ const Hero = () => {
         <div className="absolute bottom-40 left-20 w-16 h-16 bg-gradient-to-r from-purple-400/30 to-pink-500/30 rounded-full blur-lg animate-bounce delay-300"></div>
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex flex-col">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16 min-h-screen flex flex-col">
         {/* Logo */}
-        <div className="mb-4 flex justify-start">
+        <div className="mb-2 flex justify-start">
           <img src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" alt="Logo" className="h-8 sm:h-10 lg:h-8 w-auto" />
         </div>
         
@@ -128,3 +129,4 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
+
