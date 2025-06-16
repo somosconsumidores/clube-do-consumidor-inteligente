@@ -157,7 +157,7 @@ const CashbackSection = () => {
         </div>
 
         {/* Call to action */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-6 sm:p-8 text-white mx-2">
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">
               💸 Comece a Economizar Hoje Mesmo!
@@ -181,6 +181,21 @@ const CashbackSection = () => {
             </div>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
               🚀 Quero Meu Cashback Agora
+            </Button>
+          </div>
+        </div>
+
+        {/* Moved section from MagazineSection */}
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-white mx-2">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+              🚀 Tudo isso incluso na sua assinatura!
+            </h3>
+            <p className="text-lg sm:text-xl mb-6 text-indigo-100">
+              Revista digital + Biblioteca de e-books + Assistentes IA + Cashback
+            </p>
+            <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+              💎 Quero Acesso Completo Agora
             </Button>
           </div>
         </div>
