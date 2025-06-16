@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Gift, CreditCard, Bot, DollarSign, BookOpen } from 'lucide-react';
@@ -33,11 +32,11 @@ const Benefits = () => {
   ];
 
   const giftImages = [
-    "/lovable-uploads/410a6ff9-9a33-47de-980c-41489d7e70f3.png",
     "/lovable-uploads/678d5efe-5ef7-423b-b963-298c0f512067.png",
     "/lovable-uploads/3e6a5cbd-218c-4361-bbea-0e2f848e55fe.png",
     "/lovable-uploads/2930ab0f-7c16-4586-a4bc-35b8563ec902.png",
-    "/lovable-uploads/c458f8cb-81b5-4d0e-9e31-f86fd3eaa39e.png"
+    "/lovable-uploads/c458f8cb-81b5-4d0e-9e31-f86fd3eaa39e.png",
+    "/lovable-uploads/410a6ff9-9a33-47de-980c-41489d7e70f3.png"
   ];
 
   return (
