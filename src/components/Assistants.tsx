@@ -6,28 +6,32 @@ import { Scale, Calculator, ShoppingCart, Lightbulb } from 'lucide-react';
 const Assistants = () => {
   const assistants = [
     {
-      icon: <Scale className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />,
+      icon: <Scale className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
       title: "👨‍⚖️ Mestre do Direito do Consumidor",
       description: "Orientação e suporte jurídico gratuito.",
-      gradient: "from-blue-500 to-indigo-600"
+      gradient: "from-blue-500 to-indigo-600",
+      shadowColor: "shadow-blue-500/30"
     },
     {
-      icon: <Calculator className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />,
+      icon: <Calculator className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
       title: "🧮 Mestre das Finanças",
       description: "Planejamento financeiro para sair das dívidas.",
-      gradient: "from-green-500 to-emerald-600"
+      gradient: "from-green-500 to-emerald-600",
+      shadowColor: "shadow-green-500/30"
     },
     {
-      icon: <ShoppingCart className="w-8 h-8 sm:w-10 sm:h-10 text-orange-600" />,
+      icon: <ShoppingCart className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
       title: "🛒 Mestre do Supermercado",
       description: "Economia nas compras do dia a dia.",
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
+      shadowColor: "shadow-orange-500/30"
     },
     {
-      icon: <Lightbulb className="w-8 h-8 sm:w-10 sm:h-10 text-purple-600" />,
+      icon: <Lightbulb className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
       title: "🧠 Mestre dos Produtos",
       description: "Ajuda para escolher o melhor produto antes de comprar.",
-      gradient: "from-purple-500 to-pink-600"
+      gradient: "from-purple-500 to-pink-600",
+      shadowColor: "shadow-purple-500/30"
     }
   ];
 
@@ -49,18 +53,28 @@ const Assistants = () => {
           {assistants.map((assistant, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 bg-white border-0 shadow-lg"
+              className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 bg-white border-0 shadow-lg hover:shadow-xl"
             >
               <CardContent className="p-6 sm:p-8 text-center">
-                <div className="mb-4 sm:mb-6 flex justify-center">
-                  <div className={`p-4 sm:p-6 bg-gradient-to-br ${assistant.gradient} rounded-full group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    {assistant.icon}
+                <div className="mb-6 sm:mb-8 flex justify-center">
+                  <div className={`
+                    relative p-6 sm:p-8 bg-gradient-to-br ${assistant.gradient} 
+                    rounded-2xl group-hover:scale-110 transition-all duration-500 
+                    shadow-2xl ${assistant.shadowColor} group-hover:shadow-3xl
+                    before:absolute before:inset-0 before:bg-white/20 before:rounded-2xl
+                    before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300
+                  `}>
+                    <div className="relative z-10">
+                      {assistant.icon}
+                    </div>
+                    {/* Efeito de brilho */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
+                <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4 leading-tight group-hover:text-gray-900 transition-colors duration-300">
                   {assistant.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-600 leading-relaxed text-sm sm:text-base group-hover:text-gray-700 transition-colors duration-300">
                   {assistant.description}
                 </p>
               </CardContent>
