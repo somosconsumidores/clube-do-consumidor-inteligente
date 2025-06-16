@@ -39,12 +39,14 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
-              >
-                💳 Quero Ser Membro Agora
-              </Button>
+              <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
+                >
+                  💳 Quero Ser Membro Agora
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -77,12 +79,14 @@ const Pricing = () => {
           </div>
           
           <div className="text-center">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              👉 Quero Ser Membro e Ganhar Meu Presente
-            </Button>
+            <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                👉 Quero Ser Membro e Ganhar Meu Presente
+              </Button>
+            </a>
           </div>
         </div>
 

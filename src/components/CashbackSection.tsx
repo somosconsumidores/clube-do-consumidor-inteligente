@@ -179,9 +179,11 @@ const CashbackSection = () => {
                 <p className="text-sm text-green-100">compra = R$ 40 de volta</p>
               </div>
             </div>
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
-              🚀 Quero Meu Cashback Agora
-            </Button>
+            <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+                🚀 Quero Meu Cashback Agora
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -194,9 +196,11 @@ const CashbackSection = () => {
             <p className="text-lg sm:text-xl mb-6 text-indigo-100">
               Revista digital + Biblioteca de e-books + Assistentes IA + Cashback
             </p>
-            <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
-              💎 Quero Acesso Completo Agora
-            </Button>
+            <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+                💎 Quero Acesso Completo Agora
+              </Button>
+            </a>
           </div>
         </div>
       </div>

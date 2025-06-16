@@ -5,7 +5,7 @@ import { Gift, Zap, Package, Star, Shield, TrendingUp } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Video Background with Creative Overlay */}
       <div className="absolute inset-0">
         <video
@@ -13,22 +13,22 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-30"
         >
           <source src="https://video.wixstatic.com/video/a025ad_9e9768cfb13447f78cb6bc0817b14ecc/1080p/mp4/file.mp4" type="video/mp4" />
         </video>
         
         {/* Creative Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-purple-900/70 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-purple-900/80 to-slate-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
         
         {/* Animated Mesh Pattern */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent animate-pulse"></div>
         
         {/* Floating Geometric Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-full blur-xl animate-bounce"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-40 left-20 w-16 h-16 bg-gradient-to-r from-purple-400/20 to-pink-500/20 rounded-full blur-lg animate-bounce delay-300"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-yellow-400/30 to-orange-500/30 rounded-full blur-xl animate-bounce"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-r from-green-400/30 to-blue-500/30 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-40 left-20 w-16 h-16 bg-gradient-to-r from-purple-400/30 to-pink-500/30 rounded-full blur-lg animate-bounce delay-300"></div>
       </div>
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex items-center">
@@ -73,12 +73,14 @@ const Hero = () => {
                 </div>
               </div>
               
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
-              >
-                👉 Quero Começar a Economizar Agora
-              </Button>
+              <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="w-full sm:w-auto bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
+                >
+                  👉 Quero Começar a Economizar Agora
+                </Button>
+              </a>
               
               <p className="mt-4 text-blue-200 text-sm">
                 🔐 Sem compromisso • Cancelamento fácil • Dados protegidos
