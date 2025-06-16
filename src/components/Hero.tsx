@@ -7,6 +7,20 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-green-600 text-white">
       <div className="absolute inset-0 bg-black/20"></div>
+      
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-30"
+        >
+          <source src="https://video.wixstatic.com/video/a025ad_9e9768cfb13447f78cb6bc0817b14ecc/1080p/mp4/file.mp4" type="video/mp4" />
+        </video>
+      </div>
+      
       <div className="relative container mx-auto px-6 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center items-center gap-2 mb-6">
