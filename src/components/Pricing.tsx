@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -82,10 +81,10 @@ const Pricing = () => {
             <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="w-full bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-4 rounded-full text-sm sm:text-lg shadow-lg transform hover:scale-105 transition-all duration-200 leading-tight"
+                className="w-full bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-4 rounded-full text-sm sm:text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                <span className="block sm:inline">👉 Quero Ser Membro e</span>
-                <span className="block sm:inline sm:ml-1">Ganhar Meu Presente</span>
+                <span className="sm:hidden">👉 Quero Ser Membro</span>
+                <span className="hidden sm:inline">👉 Quero Ser Membro e Ganhar Meu Presente</span>
               </Button>
             </a>
           </div>
