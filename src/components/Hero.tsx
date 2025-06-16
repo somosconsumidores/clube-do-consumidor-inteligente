@@ -1,20 +1,11 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Gift, Zap, Package, Star, Shield, TrendingUp } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+  return <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Video Background with Creative Overlay */}
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-30"
-        >
+        <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-30">
           <source src="https://video.wixstatic.com/video/a025ad_9e9768cfb13447f78cb6bc0817b14ecc/1080p/mp4/file.mp4" type="video/mp4" />
         </video>
         
@@ -34,11 +25,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32 min-h-screen flex flex-col items-center">
         {/* Logo */}
         <div className="mb-6 sm:mb-8">
-          <img 
-            src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" 
-            alt="Logo" 
-            className="h-8 sm:h-10 lg:h-12 w-auto"
-          />
+          <img src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" alt="Logo" className="h-8 sm:h-10 lg:h-8 w-auto" />
         </div>
         
         <div className="max-w-6xl mx-auto flex-1 flex items-center">
@@ -83,10 +70,7 @@ const Hero = () => {
               </div>
               
               <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg" 
-                  className="w-full sm:w-auto bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
-                >
+                <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white/20">
                   👉 Quero Começar a Economizar Agora
                 </Button>
               </a>
@@ -140,8 +124,6 @@ const Hero = () => {
       
       {/* Bottom Wave Effect */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
