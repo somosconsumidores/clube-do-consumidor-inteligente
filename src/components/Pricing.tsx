@@ -2,10 +2,8 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Gift, Truck, Shield, Users } from 'lucide-react';
-
 const Pricing = () => {
-  return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-green-50 to-blue-50">
+  return <section className="py-16 sm:py-20 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6 px-2">
@@ -39,10 +37,7 @@ const Pricing = () => {
               </div>
               
               <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
-                >
+                <Button size="lg" className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition-all duration-200">
                   💳 Quero Ser Membro Agora
                 </Button>
               </a>
@@ -79,11 +74,8 @@ const Pricing = () => {
           
           <div className="text-center">
             <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
-              <Button 
-                size="lg" 
-                className="w-full bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-4 rounded-full text-sm sm:text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-              >
-                <span className="sm:hidden">👉 Quero Ser Membro</span>
+              <Button size="lg" className="w-full bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-4 rounded-full text-sm sm:text-lg shadow-lg transform hover:scale-105 transition-all duration-200">
+                <span className="sm:hidden font-bold text-lg">👉 Quero Ser Membro</span>
                 <span className="hidden sm:inline">👉 Quero Ser Membro e Ganhar Meu Presente</span>
               </Button>
             </a>
@@ -112,8 +104,6 @@ const Pricing = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Pricing;
