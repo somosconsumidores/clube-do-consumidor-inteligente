@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Gift, Zap, Package, Star, Shield, TrendingUp } from 'lucide-react';
@@ -28,7 +27,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-6 sm:py-8 lg:py-16 min-h-screen flex flex-col">
         {/* Logo */}
         <div className="mb-4 sm:mb-2 flex justify-center">
-          <img src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" alt="Logo" className="h-6 sm:h-8 lg:h-8 w-auto" />
+          <img src="/lovable-uploads/cf8b4454-89d3-4b59-8586-50e907b2500c.png" alt="Logo" className="h-8 sm:h-8 lg:h-8 w-auto" />
         </div>
         
         <div className="max-w-6xl mx-auto flex-1 flex items-center">
