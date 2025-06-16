@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Scale, Calculator, ShoppingCart, Lightbulb } from 'lucide-react';
+import { Scale, Calculator, ShoppingCart, Lightbulb, Plane } from 'lucide-react';
 
 const Assistants = () => {
   const assistants = [
@@ -32,6 +32,13 @@ const Assistants = () => {
       description: "Ajuda para escolher o melhor produto antes de comprar.",
       gradient: "from-purple-500 to-pink-600",
       shadowColor: "shadow-purple-500/30"
+    },
+    {
+      icon: <Plane className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
+      title: "✈️ Mestre das Viagens",
+      description: "Planejamento de viagens, dicas de destinos e otimização de roteiros turísticos.",
+      gradient: "from-teal-500 to-cyan-600",
+      shadowColor: "shadow-teal-500/30"
     }
   ];
 
@@ -49,7 +56,7 @@ const Assistants = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {assistants.map((assistant, index) => (
             <Card 
               key={index} 
