@@ -32,6 +32,14 @@ const Benefits = () => {
     }
   ];
 
+  const giftImages = [
+    "/lovable-uploads/410a6ff9-9a33-47de-980c-41489d7e70f3.png",
+    "/lovable-uploads/678d5efe-5ef7-423b-b963-298c0f512067.png",
+    "/lovable-uploads/3e6a5cbd-218c-4361-bbea-0e2f848e55fe.png",
+    "/lovable-uploads/2930ab0f-7c16-4586-a4bc-35b8563ec902.png",
+    "/lovable-uploads/c458f8cb-81b5-4d0e-9e31-f86fd3eaa39e.png"
+  ];
+
   return (
     <section className="py-16 sm:py-20 bg-gradient-to-br from-white to-blue-50">
       <div className="container mx-auto px-4 sm:px-6">
@@ -43,6 +51,42 @@ const Benefits = () => {
           </h2>
         </div>
         
+        {/* Seção de Presentes com Imagens */}
+        <div className="mb-16 sm:mb-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+              🎁 Exemplos de Presentes Exclusivos
+            </h3>
+            <p className="text-lg text-gray-600">
+              Produtos incríveis que você pode receber como presente de boas-vindas
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
+            {giftImages.map((image, index) => (
+              <div 
+                key={index}
+                className="group hover:scale-105 transition-transform duration-300"
+              >
+                <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-200">
+                  <img 
+                    src={image} 
+                    alt={`Presente ${index + 1}`}
+                    className="w-full h-32 sm:h-40 object-cover rounded-xl"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-base sm:text-lg text-gray-600 font-medium">
+              ✨ E muito mais surpresas incríveis esperando por você!
+            </p>
+          </div>
+        </div>
+        
+        {/* Seção de Benefícios Original */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
             <Card 
