@@ -43,8 +43,13 @@ const Footer = () => {
               Junte-se aos milhares de consumidores inteligentes que já transformaram suas vidas financeiras
             </p>
             <a href="https://www.somosconsumidores.com.br/plano-clube-de-membros" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-lg sm:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-200 animate-pulse">
-                👉 CLIQUE AQUI E SEJA UM MEMBRO AGORA
+              <Button size="lg" className="w-full sm:w-auto bg-white text-red-600 hover:bg-gray-100 font-bold py-3 sm:py-4 px-4 sm:px-12 rounded-full text-base sm:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-200 animate-pulse">
+                <span className="sm:hidden leading-tight">
+                  👉 CLIQUE AQUI E SEJA<br />UM MEMBRO AGORA
+                </span>
+                <span className="hidden sm:inline">
+                  👉 CLIQUE AQUI E SEJA UM MEMBRO AGORA
+                </span>
               </Button>
             </a>
           </div>
