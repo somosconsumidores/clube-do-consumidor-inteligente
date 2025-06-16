@@ -17,9 +17,7 @@ const Testimonials = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             ⭐ <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">O que nossos assinantes dizem</span>
           </h2>
-          <p className="text-xl text-blue-100">
-            Veja o que nossos membros estão dizendo:
-          </p>
+          
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
