@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Gift, CreditCard, Bot, DollarSign, BookOpen } from 'lucide-react';
@@ -33,7 +32,6 @@ const Benefits = () => {
   ];
 
   const giftImages = [
-    "/lovable-uploads/b7be7651-5dcb-4b7d-9e60-c6cc0e8ce77c.png",
     "/lovable-uploads/3e6a5cbd-218c-4361-bbea-0e2f848e55fe.png",
     "/lovable-uploads/2930ab0f-7c16-4586-a4bc-35b8563ec902.png",
     "/lovable-uploads/c458f8cb-81b5-4d0e-9e31-f86fd3eaa39e.png",
@@ -63,7 +61,7 @@ const Benefits = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 max-w-7xl mx-auto">
             {giftImages.map((image, index) => (
               <div 
                 key={index}
